@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>expanded</key><true/>
+  <key>nodeid</key><string>ff6bd7bf-7b8f-41d2-81ac-7b9225152718</string>
+  <key>modified_time</key><integer>1700684906</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1700684906</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>icon</key><string>star.png</string>
+  <key>title</key><string>Basics</string>
+  <key>version</key><integer>6</integer>
+  <key>order</key><integer>1</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sets</title>
+</head><body><div style="text-align: left"><span style="font-family: Lucida Grande"><span style="font-size: 16pt">sets are <span style="color: #ff0000">immutable</span>&nbsp;sequences</span></span></div>, means it's values <span style="color: #ff0000">are not changeable<br/>
+</span><span style="color: #ff0000">different</span>&nbsp;kind of <span style="color: #ff0000">data types</span>&nbsp;can be <span style="color: #ff0000">stored<br/>
+</span><span style="color: #ff0000">no</span><span style="font-family: Verdana"><span style="font-size: 15pt"><div style="text-align: left">&nbsp;<span style="color: #ff0000">duplicate</span>&nbsp;members</div></span></span><span style="color: #ff0000">&nbsp; <span style="color: #000000">(will be auto removed) <br/>
+</span></span><span style="color: #ff0000"><span style="color: #000000">Unordered</span>&nbsp;can not be indexed</span><span style="color: #000000">&nbsp;using [ ]<br/>
+</span><span style="color: #000000"><br/>
+</span><br/>
+<span style="font-size: 16pt"><span style="font-family: Lucida Grande"><div style="text-align: left">Sets can be created by several means:</div></span></span><ul><div style="text-align: left"><li>Use a comma-separated list of elements within braces: {'jack', 'sjoerd'}</li>
+<li>Use a set comprehension: {c for c in 'abracadabra' if c not in 'abc'}</li>
+<li>Use the type constructor: set(), set('foobar'), set(['a', 'b', 'foo'])</li>
+</div></ul>
+<br/>
+built-in methods that you can use on sets:<br/>
+<img src="image.png" /><br/>
+<br/>
+&nbsp;<br/>
+<span style="font-size: 20pt">Accessing Set Items</span>&nbsp; <br/>
+<img src="image 2.png" /><br/>
+<img src="image 3.png" /><br/>
+<br/>
+Note: Once a set is created, you <span style="color: #ff0000">cannot change</span>&nbsp;its items, <br/>
+but you can add new items by add() or update(iterable). <br/>
+Use remove() to remove an item but it will raise an exception <br/>
+if item is not found. So use discard() instead, won't raise exception.<br/>
+<br/>
+<span style="font-size: 20pt">Join Two Sets<br/>
+</span>You can use the <span style="color: #ff0000">union() </span>method that returns a new set containing all items from both sets, or the<span style="color: #ff0000">&nbsp;<br/>
+</span><span style="color: #ff0000">update() </span>method that inserts all the items from one set into another:<span style="color: #ff0000"><br/>
+</span><img src="image 4.png" /><span style="color: #ff0000"><br/>
+</span><img src="image 5.png" /><span style="color: #ff0000"><br/>
+</span><br/>
+<span style="font-size: 20pt"><div style="text-align: left">set comprehension<br/>
+</div></span>same as list comprehension but { } instead of [ ]<br/>
+</body></html>

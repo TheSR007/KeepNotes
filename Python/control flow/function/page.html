@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Function</title>
+</head><body>A function is a block of code which only runs when it is called.<br/>
+You can pass data, known as parameters, into a function.<br/>
+A function can return data as a result.<br/>
+<br/>
+Syntax:<br/>
+def name(*parameters):<br/>
+&nbsp; &nbsp; statement<br/>
+<img src="image.png" /><br/>
+<br/>
+A parameter is the variable <span style="color: #ff0000">listed inside the parentheses</span>&nbsp;in the function definition.<br/>
+An argument is the value that is <span style="color: #ff0000">sent to the function</span>&nbsp;when it is called.<br/>
+<img src="image 2.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Default Parameter Value</span>&nbsp; &nbsp;<br/>
+If we call the function without argument, it uses the default value.<br/>
+syntex:<br/>
+def name(argument = value):<br/>
+statement <br/>
+<img src="image 6.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Passing data types as an Argument</span>&nbsp; <br/>
+You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.<br/>
+<img src="image 7.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Special parameters &nbsp;(for Devs)<br/>
+</span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">For readability and performance, it makes sense to restrict the way arguments can be passed so that a developer need only look at the function definition to determine if items are passed by position, by position or keyword, or by keyword.</span></span></div>&nbsp; <br/>
+<img src="image 17.png" /><br/>
+1.<span style="font-size: 18pt">Positional-or-Keyword Arguments </span>&nbsp;<br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"><span style="background-color: #ff0000">If </span></span></span></div><span style="background-color: #ff0000">/<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> and </span></span></div>*<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> are not present</span></span></div></span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">&nbsp;in the function definition, <span style="background-color: #ff0000">arguments may be passed</span>&nbsp;to a function <span style="background-color: #ff0000">by position or by keyword</span>.</span></span></div>&nbsp; <br/>
+<br/>
+2.<span style="font-size: 18pt">Positional-Only Parameters</span>&nbsp; <br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"><span style="background-color: #ff0000">Positional-only</span>&nbsp;parameters are <span style="background-color: #ff0000">placed before a </span></span></span></div><span style="background-color: #ff0000">/<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> (forward-slash)</span></span></div></span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">. The </span></span></div>/<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> is used to logically separate the positional-only parameters from the rest of the parameters. If there is <span style="background-color: #ff0000">no </span></span></span></div><span style="background-color: #ff0000">/<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> in the function</span></span></div></span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">&nbsp;definition, there are <span style="background-color: #ff0000">no positional-only parameters</span>.</span></span></div>&nbsp; <br/>
+<br/>
+3.<span style="font-size: 18pt">Keyword-Only Arguments </span>&nbsp;<br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">To mark parameters <span style="background-color: #ff0000">as </span></span></span></div><span style="background-color: #ff0000"><i>keyword-only</i></span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, indicating the parameters must be passed by keyword argument, place an </span></span></div><span style="background-color: #ff0000">*<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> in the arguments list</span></span></div></span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">&nbsp;just <span style="background-color: #ff0000">before the first </span></span></span></div><span style="background-color: #ff0000"><i>keyword-only</i><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> paramete</span></span></div></span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">r.</span></span></div>&nbsp; <br/>
+<img src="image 18.png" /><br/>
+<br/>
+<br/>
+<span style="font-size: 20pt">Keyword Arguments<br/>
+</span>You can also send arguments with the <span style="color: #ff0000">key = value syntex</span>,<br/>
+This way <span style="color: #ff0000">the order</span>&nbsp;of the arguments <span style="color: #ff0000">does not matter</span>.<br/>
+<img src="image 4.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Arbitrary Arguments, *args</span>&nbsp; <br/>
+If you do not know how many arguments that will be passed into your function, add a <span style="color: #ff0000">* </span>before the parameter name in the function definition.<span style="color: #ff0000"><br/>
+</span>This way the function will receive a <i>tuple</i>&nbsp;of arguments, and can access the items accordingly:<br/>
+<img src="image 3.png" /><br/>
+Note: <span style="font-size: 16pt">Arbitrary arguments</span>&nbsp;are <span style="background-color: #ff0000">the last parameter</span>&nbsp;of the function, <div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">because <span style="background-color: #ff0000">they scoop up all remaining input arguments</span>&nbsp;that are passed after this to the function</span></span></div>.<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">Any formal parameters which occur after the </span></span></div>*args<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> parameter are <span style="background-color: #ff0000">‘keyword-only’</span>&nbsp;arguments, meaning that they can only be used <span style="background-color: #ff0000">as keywords</span>&nbsp;rather than positional arguments.</span></span></div>&nbsp; <br/>
+<br/>
+<span style="font-size: 20pt">Arbitrary Keyword Arguments, **kwargs</span>&nbsp; <br/>
+If you do not know how many keyword arguments that will be passed into your function, add two asterisk: <span style="color: #ff0000">**</span>&nbsp;before the parameter name in the function definition.<br/>
+This way the function will receive a <i>dictionary</i>&nbsp; of arguments, and can access the items accordingly:<br/>
+<img src="image 5.png" /><br/>
+<img src="image 13.png" /><br/>
+<img src="image 14.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Unpacking Argument Lists </span>&nbsp;<br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional arguments</span></span></div><br/>
+syntax:<br/>
+*variable<br/>
+<img src="image 15.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Unpacking Argument</span>&nbsp;<span style="font-size: 20pt">Dictionary</span><br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">when the arguments are already in a</span></span></div>&nbsp;dictionary <span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left">but need to be unpacked for a function call requiring separate positional arguments</div></span></span><br/>
+syntex:<br/>
+**variable<br/>
+<img src="image 16.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Return Values</span>&nbsp; <br/>
+To let a function return a value, use the <span style="color: #ff0000">return</span>&nbsp;keyword<br/>
+<img src="image 8.png" /><br/>
+To let a function return a values one by one, use the <span style="background-color: #ff0000">yield</span>&nbsp;keyword<br/>
+<img src="image 9.png" /><br/>
+<br/>
+<span style="font-size: 20pt">The pass Statement</span>&nbsp; <br/>
+<span style="color: #ff0000">function</span>&nbsp;definitions cannot be empty, but if you for some reason have a <span style="color: #ff0000">function</span>&nbsp;definition with no content, put in the <span style="color: #ff0000">pass</span>&nbsp;keyword to avoid getting an error.<br/>
+<img src="image 10.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Recursion</span>&nbsp; <br/>
+Python also accepts function recursion, which means a defined function can call itself.<br/>
+Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.<br/>
+<img src="image 11.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Lambda Expressions</span>&nbsp; <br/>
+A lambda function is a small anonymous function.<br/>
+A lambda function can take any number of arguments, but can only have one expression.<br/>
+<br/>
+<span style="font-size: 18pt">Syntax:<br/>
+</span>lambda *arguments : expression<br/>
+<img src="image 12.png" /><br/>
+<br/>
+</body></html>

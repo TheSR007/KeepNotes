@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Iterators</string>
+  <key>nodeid</key><string>4ff8da5c-9ae6-4269-b181-b5d95c6b2034</string>
+  <key>modified_time</key><integer>1700970875</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1700966608</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>4</integer>
+  <key>info_sort</key><string>order</string>
+  <key>icon</key><string>heart.png</string>
+</dict>
+</node>

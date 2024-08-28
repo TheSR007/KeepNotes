@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Polymorphism</string>
+  <key>nodeid</key><string>c8eeb583-fa57-4532-aa3e-38b4758f3c03</string>
+  <key>modified_time</key><integer>1700966676</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1700966676</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>6</integer>
+  <key>info_sort</key><string>order</string>
+  <key>icon</key><string>heart.png</string>
+</dict>
+</node>

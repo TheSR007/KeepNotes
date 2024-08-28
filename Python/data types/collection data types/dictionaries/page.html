@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dictionaries</title>
+</head><body><div style="text-align: left"><span style="font-family: Lucida Grande"><span style="font-size: 16pt">sets are <span style="color: #ff0000">mutable</span>&nbsp;sequences</span></span></div>, means it's values <span style="color: #ff0000">are changeable<br/>
+</span><span style="color: #ff0000">different</span>&nbsp;kind of <span style="color: #ff0000">data types</span>&nbsp;can be <span style="color: #ff0000">stored </span><span style="color: #00ff00">("key":any type)</span><span style="color: #ff0000"><br/>
+</span><span style="color: #ff0000">no</span><span style="font-family: Verdana"><span style="font-size: 15pt"><div style="text-align: left">&nbsp;<span style="color: #ff0000">duplicate</span>&nbsp;members</div></span></span><span style="color: #ff0000">&nbsp; <br/>
+</span><span style="color: #ff0000">can be indexed</span><span style="color: #000000">&nbsp;using [ ]<br/>
+</span><br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">Dictionaries can be created by several means:</span></span></div>&nbsp; <ul><div style="text-align: left"><li>Use a comma-separated list of key: value pairs within braces: {'jack': 4098, 'sjoerd': 4127} or {4098: 'jack', 4127: 'sjoerd'}</li>
+<li>Use a dict comprehension: {}, {x: x ** 2 for x in range(10)}</li>
+</div><li><div style="text-align: left">Use the type constructor: dict(), dict([('foo', 100), ('bar', 200)]), dict(foo=100, bar=200)</div></li>
+</ul>
+<img src="image 2.png" /><br/>
+<br/>
+built-in methods that you can use on dictionaries:<br/>
+<img src="image.png" /><br/>
+<br/>
+<span style="color: #ff0000">list(dictionary)</span>&nbsp;will <span style="color: #ff0000">return a list</span>&nbsp;of the keys in <span style="color: #ff0000">insersion order</span>, use <span style="color: #ff0000">sorted(dictionary)</span>&nbsp;for sorted<br/>
+<span style="color: #ff0000">dictionary[key]</span>&nbsp;will give the <span style="color: #ff0000">value in return<br/>
+</span><span style="color: #ff0000"><br/>
+</span><div style="text-align: left"><span style="font-family: Lucida Grande"><span style="font-size: 20pt">Dict Comprehension</span></span></div><span style="font-size: 20pt">&nbsp;</span>&nbsp;<br/>
+same as Set Conprehension except { expression : expression loop}<br/>
+in dictionary order <br/>
+<br/>
+<span style="font-size: 20pt">Accessing dict Iteams<br/>
+</span>x = thisdict["key"] = value or thisdict.update({"key" : value}) (same as key=value)<br/>
+x = thisdict.get("key")<br/>
+x = thisdict.keys() -&gt; a list of the keys<br/>
+x = thisdict.values() - &gt; a list of the values<br/>
+x = thisdict.items() -&gt; each item in a dictionary, as tuples in a list<br/>
+thisdict.pop("key") -&gt; removes the key : value pair<br/>
+thisdict.popitem() -&gt; removes the last inserted item<br/>
+<br/>
+<img src="image 3.png" /><br/>
+<img src="image 4.png" /><br/>
+<img src="image 5.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Copying a Dictionary &nbsp;<br/>
+same as copying a list, need to use dict.copy()<br/>
+for shalow copy and dict.deepcopy() from copy module<br/>
+<br/>
+<br/>
+Nested Dictionaries &nbsp;<br/>
+</span><img src="image 6.png" />&nbsp;-&gt; <img src="image 7.png" /><span style="font-size: 20pt"><br/>
+</span><span style="font-size: 20pt"><br/>
+</span>Accessing items<br/>
+myfamily["key1"]["key2"]<br/>
+<br/>
+<br/>
+</body></html>

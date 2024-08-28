@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scope</title>
+</head><body>A variable is only available from inside the region it is created. <br/>
+This is called <b>scope</b>.<br/>
+<br/>
+<span style="font-size: 20pt">Local Scope &nbsp;<br/>
+</span>A variable created inside a function belongs to the <i>local scope</i>&nbsp;of that function, and can only be used inside that function.<br/>
+<img src="image.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Function Inside Function</span>&nbsp; <br/>
+As explained in the example above, the variable x is not available outside the function, but it is available for any function inside the function:<br/>
+<img src="image 2.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Global Scope</span>&nbsp; <br/>
+A variable created in the main body of the Python code is a global variable and belongs to the global scope.<br/>
+Global variables are available from within any scope, global and local.<br/>
+<img src="image 3.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Naming Variables</span>&nbsp; <br/>
+If you operate with <span style="color: #ff0000">the same variable name</span>&nbsp;inside and outside of a function, Python will treat them <span style="color: #ff0000">as two separate variables</span>, one available in the global scope (outside the function) and one available in the local scope (inside the function):<br/>
+<img src="image 4.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Global Keyword </span>&nbsp;<br/>
+If you need to <span style="color: #ff0000">create a global variable</span>, but are stuck in the local scope, you can use the <span style="color: #ff0000">global</span>&nbsp;<span style="color: #ff0000">keyword</span>.<br/>
+the <span style="color: #ff0000">global</span>&nbsp;keyword makes the variable global.<br/>
+syntax:<br/>
+global name ("," name)* &nbsp;<br/>
+<br/>
+<img src="image 5.png" /><br/>
+Also, use the <span style="color: #ff0000">global</span>&nbsp;keyword if you want to make a change to a global variable inside a function.<br/>
+<img src="image 6.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Nonlocal Keyword</span>&nbsp; <br/>
+the <span style="color: #ff0000">nonlocal</span>&nbsp;keyword is used to work with variables inside nested functions, where the variable should not belong to the inner function.<br/>
+Use the keyword <span style="color: #ff0000">nonlocal</span>&nbsp;to declare that the variable is not local.<br/>
+<img src="image 7.png" /><br/>
+<br/>
+<br/>
+Note:<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">The <span style="color: #ff0000">global</span> keyword can be used to indicate that particular variables live in the global scope and should be rebound there; <br/>
+</span></span></div><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">the <span style="color: #ff0000">nonlocal</span> statement indicates that particular variables live in an enclosing scope and should be rebound there.</span></span></div>&nbsp; <br/>
+<img src="image 8.png" />-&gt;<img src="image 9.png" /><br/>
+<br/>
+Note: <div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">the </span></span></div><i>local</i><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> assignment (which is default) didn’t change </span></span></div><i>scope_test</i><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">'s binding of </span></span></div><i>spam</i><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">. The nonlocal assignment changed </span></span></div><i>scope_test</i><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">'s binding of </span></span></div><i>spam</i><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, and the global assignment changed the module-level binding.</span></span></div>&nbsp; </body></html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>as a Calculator</string>
+  <key>nodeid</key><string>3a56b195-a46b-44a3-8321-8ddf296162fd</string>
+  <key>modified_time</key><integer>1700679078</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1700678872</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+  <key>icon</key><string>heart.png</string>
+</dict>
+</node>

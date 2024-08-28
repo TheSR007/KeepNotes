@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Private Variables</title>
+</head><body><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">“Private” instance variables that cannot be accessed except from inside an object don’t exist in Python.</span></span></div>&nbsp; <br/>
+<span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left">However, there is a convention that is followed by most Python code: a name prefixed <span style="color: #ff0000">with an underscore</span>&nbsp;(e.g. </div></span></span>_spam<span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left">) <span style="color: #ff0000">should be treated as a non-public part of the API</span>&nbsp;(whether it is a function, a method or a data member)</div></span></span>. <br/>
+<br/>
+<span style="font-size: 20pt">Name Mangling</span>&nbsp; <br/>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">Any identifier of the form </span></span></div>__spam<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> (<span style="color: #ff0000">at least two leading underscores</span>, at most one trailing underscore) is textually <span style="color: #ff0000">replaced with </span></span></span></div><span style="color: #ff0000">_classname__spam</span><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, where </span></span></div>classname<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande"> is the current class name with leading underscore(s) stripped.</span></span></div>&nbsp; <br/>
+<img src="image.png" /><br/>
+Note: it's still accessable after mangling<br/>
+<img src="image 2.png" /><br/>
+</body></html>

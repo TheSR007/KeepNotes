@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inheritance</title>
+</head><body>Inheritance allows us to define a class that inherits all the methods and properties from another class.<br/>
+<b>Parent class(super class)</b> is the class being inherited from, also called base class.<br/>
+<b>Child class</b> is the class that inherits from another class, also called derived class.<br/>
+<br/>
+syntax:<br/>
+class DerivedClassName(BaseClassName): <ul><li style="list-style-type: none">statement</li>
+<li style="list-style-type: none"></li>
+</ul>
+<span style="font-size: 20pt">Create a Parent Class</span>&nbsp; <br/>
+Any class can be a parent class, so the syntax is the same as creating any other class:<br/>
+<img src="image.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Create a Child Class</span>&nbsp; <br/>
+To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class:<br/>
+<img src="image 2.png" /><br/>
+<img src="image 3.png" /><br/>
+<br/>
+<span style="font-size: 20pt">Adding the __init__() Function</span>&nbsp; <br/>
+When you add the __init__() function, the child class will no longer inherit the parent's __init__() function.<br/>
+<img src="image 4.png" /><br/>
+Note: The child's __init__() function <span style="color: #ff0000"><b>overrides</b></span> the inheritance of the parent's __init__() function<br/>
+<br/>
+<span style="color: #ff0000">To keep the inheritance</span>&nbsp;of the parent's __init__() function, <span style="color: #ff0000">add a call</span>&nbsp;to the parent's __init__() function<br/>
+<img src="image 5.png" /><br/>
+<br/>
+<span style="font-size: 20pt">The super() Function</span>&nbsp; <br/>
+Python also has a super() function that will make the child class inherit all the methods and properties from its parent:<br/>
+<img src="image 6.png" /><br/>
+By using the super() function, you <span style="color: #ff0000">do not have to use the name of the parent element</span>, it will automatically <span style="color: #ff0000">inherit the methods and properties</span>&nbsp;from its parent.<br/>
+<br/>
+The rest of the things are same as normal Classes.<br/>
+Note: <br/>
+<span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left">Python has two built-in functions that work with inheritance</div></span></span>. <ul><li><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">The isunstance() to check an <span style="color: #ff0000">instance’s type</span>: </span></span></div>isinstance(obj, int)<span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left"> will be </div></span></span>True<span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left"> only if </div></span></span>obj.__class__<span style="font-family: Lucida Grande"><span style="font-size: 16pt"><div style="text-align: left"> is <span style="color: #ff0000">int or some class derived from int</span>.</div></span></span>&nbsp; </li>
+</ul>
+<ul>The<div style="text-align: left"> issubclass()</div></ul>
+<div style="text-align: left"> to check <span style="color: #ff0000">class inheritance</span>: issubclass(bool, int) is True since bool is a <span style="color: #ff0000">subclass of int</span>. However, issubclass(float, int) is False since float is not a subclass of int.<br/>
+</div><div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">Python supports a form of <span style="color: #ff0000">multiple inheritance</span>&nbsp;as well.</span></span></div>&nbsp; <br/>
+syntax:<br/>
+class DerivedClassName(Base1, Base2, Base3): <ul><li style="list-style-type: none">statement</li>
+</ul>
+<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">In the simplest cases, you can think of the search for attributes inherited from a parent class as <span style="color: #ff0000">depth-first, left-to-right</span>, not searching twice in the same class where there is an overlap in the hierarchy. Thus, if an attribute is not found in </span></span></div>DerivedClassName<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, it is searched for in </span></span></div>Base1<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, then (recursively) in the base classes of </span></span></div>Base1<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, and if it was not found there, it was searched for in </span></span></div>Base2<div style="text-align: left"><span style="font-size: 16pt"><span style="font-family: Lucida Grande">, and so on.</span></span></div>&nbsp; <br/>
+</body></html>

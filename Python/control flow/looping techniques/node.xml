@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Looping Techniques</string>
+  <key>nodeid</key><string>8d8596e1-bb1a-4621-9fa2-46f4e2145ec9</string>
+  <key>modified_time</key><integer>1702289270</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1702288817</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>2</integer>
+  <key>info_sort</key><string>order</string>
+  <key>icon</key><string>heart.png</string>
+</dict>
+</node>
